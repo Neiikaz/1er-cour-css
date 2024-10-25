@@ -1,0 +1,139 @@
+p{
+    color: blue
+}
+/* Mon texte en gras et fond jaune */
+.gras{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: yellow;
+}
+#titre{
+    font-size: xx-large;
+    font-family: Georgia, serif;
+    color: brown;
+}
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;    
+}
+/* Gras et italique */
+.italgras{
+    font-weight: 700;
+    font-style: italic;
+    color: black !important;
+}
+/* Taille police des titres et paragraphe */
+h1{
+    font-size: xx-large;
+}
+h2{
+    font-size: small;
+}
+h3{
+    font-size: xx-small;
+}
+#lep{
+    font-size: xx-large;
+    color: red;
+}
+/* div fond gris, image et dégradé */
+.fond{
+    background-color: gray;
+    color: white !important;
+    }
+.image{
+    height: 300px;
+    background-image: url(../img/path-7387018_1280.jpg);
+}
+.degrade{
+    height: 300px;
+    /* Largeur possible : width: 150px; */
+    background: linear-gradient(#fc2c00,#6d00e9);
+}
+/* Le bouton */
+.button{
+    transition: background-color 1s ease;
+}
+.button:hover{
+    background-color: green;
+}
+/* Enfant 1 et 3 */
+li:first-child{
+    color: orange;
+}
+li:last-child{
+    color: rgb(38, 0, 255);
+}
+/* liens */
+a:active{
+    color: chartreuse;
+}
+/* Prio sélecteur multiples il prends la classe du 1er H1*/
+#header h1.title{
+    color: coral;
+    background-color: yellow;
+}
+/* il prends le dernier important du coup mes "p" passe en rouge */
+p{
+    color: red !important; 
+}
+/* image baguette */
+.baguette{
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg) scale(1.5);
+}
+/* boutton zoom */
+.ouvre{
+    transform: scale(1.5);
+}
+.sushi{
+    transform: translate(50px,20px);
+}
+.sushi{
+    transform:scaleX(2);
+    transform: scaleX(0.5);
+}
+.docker{
+    transform: skew(20deg,10deg);
+}
+/* avion rotate et survole souris modif */
+.plane{
+    transform:rotate(45deg) scale(1.2) translateX(30px);
+}
+.plane:hover{
+    transform:rotate(15deg)
+}
+/* Création d'une forme + animation */
+.animfondu{
+    width: 100px;
+    height: 100px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid green;
+    animation-name: animfondu;
+    animation-duration: 5s;
+}
+@keyframes animfondu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media (min-width: 1024px){
+    #exo8{
+        font-size: 36px;
+    }
+}
+@media (max-width: 1024px) and (min-width:768px){
+    #exo8{
+        font-size: 28px;
+    }
+}
+@media (max-width: 768px){
+    #exo8{
+        font-size: 20px;
+    }
+}
