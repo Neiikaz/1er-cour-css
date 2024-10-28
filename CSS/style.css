@@ -20,7 +20,7 @@ p{
 .italgras{
     font-weight: 700;
     font-style: italic;
-    color: black !important;
+    color: black;
 }
 /* Taille police des titres et paragraphe */
 h1{
