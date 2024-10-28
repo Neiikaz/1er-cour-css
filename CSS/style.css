@@ -127,7 +127,7 @@ p{
         font-size: 36px;
     }
 }
-@media (max-width: 1024px) and (min-width:768px){
+@media (min-width:768px) and (max-width: 1024px){
     #exo8{
         font-size: 28px;
     }
